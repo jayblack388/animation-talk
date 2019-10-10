@@ -1,11 +1,11 @@
 import React from 'react';
-import { useSpring, config } from 'react-spring';
+import { useSpring } from 'react-spring';
 import { CloseButton } from 'jdb-components';
 import * as S from './styles';
-export const SplitOverlay = ({ open, close }) => {
+export const SplitOverlay = ({ open, close, config }) => {
   const { x } = useSpring({
     x: open ? 0 : 100,
-    config: config.wobbly,
+    config,
   });
   return (
     <S.OverlayContainer style={{ pointerEvents: open ? 'all' : 'none' }}>
