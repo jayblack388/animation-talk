@@ -110,9 +110,8 @@ export const SwitchContainer = styled(animated(ColDiv))`
   width: 100vw;
 `;
 export const RotatingBox = styled(animated.div)`
-  width: 10rem;
-  height: 10rem;
   background: #fff;
+  position: absolute;
 `;
 export const AccordionContainer = styled(animated(ColDiv))``;
 export const Accordion = styled.div``;
