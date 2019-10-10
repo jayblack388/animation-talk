@@ -16,7 +16,7 @@ const Basics = () => {
     { id: 5, value: 'olive' },
   ];
   const secondOptions = [
-    { id: 0, value: 'orangered' },
+    { id: 0, value: 'cornsilk' },
     { id: 1, value: 'maroon' },
     { id: 2, value: 'seagreen' },
     { id: 3, value: 'crimson' },
@@ -42,9 +42,10 @@ const Basics = () => {
         <S.ColDiv width="40%">
           <Form
             onSubmit={values => {
+              console.log(values)
               const { first_color, second_color } = values;
-              setFirstColor(first_color);
-              setSecondColor(second_color);
+              setFirstColor(first_color || '#fff');
+              setSecondColor(second_color || '#fff');
             }}
           >
             <S.RowDiv justify='space-between'>
