@@ -17,6 +17,7 @@ export const Nav = ({ close, animation }) => {
           <S.Link onClick={() => handleNav('/interpolation')}>Interpolation</S.Link>
           <S.Link onClick={() => handleNav('/transition')}>Transition</S.Link>
           <S.Link onClick={() => handleNav('/chain')}>Chain</S.Link>
+          <S.Link as='a' target='_blank' href='https://react-spring.io'>React-Spring</S.Link>
         </S.LinkContainer>
       </S.Nav>
     </S.AnimatedNavContainer>
